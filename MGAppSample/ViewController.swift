@@ -7,12 +7,17 @@
 //
 
 import UIKit
+import SideMenu
 
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        let sideMenu = storyboard!.instantiateViewController(withIdentifier: "sideMenu") as? UISideMenuNavigationController
+        
+        SideMenuManager.default.menuLeftNavigationController = sideMenu
+
     }
 
     override func didReceiveMemoryWarning() {
