@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		892940242108629D004C42D2 /* SideMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 892940232108629D004C42D2 /* SideMenuTableViewCell.swift */; };
 		8929402821086358004C42D2 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929402721086358004C42D2 /* SideMenuTableViewController.swift */; };
+		8929402A21086B4A004C42D2 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929402921086B4A004C42D2 /* SearchBarViewController.swift */; };
 		89E26C58210858D100584873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E26C57210858D100584873 /* AppDelegate.swift */; };
 		89E26C5A210858D100584873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E26C59210858D100584873 /* ViewController.swift */; };
 		89E26C5D210858D100584873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E26C5B210858D100584873 /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* Begin PBXFileReference section */
 		892940232108629D004C42D2 /* SideMenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewCell.swift; sourceTree = "<group>"; };
 		8929402721086358004C42D2 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
+		8929402921086B4A004C42D2 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		89E26C54210858D100584873 /* MGAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E26C57210858D100584873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E26C59210858D100584873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -81,6 +83,7 @@
 				89E26C63210858D300584873 /* Info.plist */,
 				892940232108629D004C42D2 /* SideMenuTableViewCell.swift */,
 				8929402721086358004C42D2 /* SideMenuTableViewController.swift */,
+				8929402921086B4A004C42D2 /* SearchBarViewController.swift */,
 			);
 			path = MGAppSample;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				892940242108629D004C42D2 /* SideMenuTableViewCell.swift in Sources */,
+				8929402A21086B4A004C42D2 /* SearchBarViewController.swift in Sources */,
 				89E26C5A210858D100584873 /* ViewController.swift in Sources */,
 				89E26C58210858D100584873 /* AppDelegate.swift in Sources */,
 				8929402821086358004C42D2 /* SideMenuTableViewController.swift in Sources */,

@@ -60,7 +60,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="7Fn-zu-HHy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2895" y="-241"/>
+            <point key="canvasLocation" x="3060" y="79"/>
         </scene>
         <!--Side Menu Navigation Controller-->
         <scene sceneID="ve4-Ny-9Nw">
@@ -82,7 +82,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Je3-KY-zZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1942" y="-241"/>
+            <point key="canvasLocation" x="2108" y="79"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="b9x-KJ-DNn">
@@ -102,8 +102,51 @@
             </objects>
             <point key="canvasLocation" x="199" y="79"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="URC-T4-xlu">
+            <objects>
+                <viewController storyboardIdentifier="searchBarView" id="q7g-zf-yEj" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="RL6-e1-Ryq">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="0.93229597733395264" green="0.99630436433941283" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <viewLayoutGuide key="safeArea" id="hFp-dB-GUF"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="361-1Y-g8I">
+                        <barButtonItem key="leftBarButtonItem" title="Item" image="list" id="tz8-Te-scF">
+                            <connections>
+                                <segue destination="3Ql-v2-Ohs" kind="show" id="LGy-Qh-22t"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uQ6-az-xy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1023" y="869"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="0xA-de-r4K">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="e0b-mq-DaP" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Sys-gO-9kf">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="q7g-zf-yEj" kind="relationship" relationship="rootViewController" id="ziA-zu-SDT"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hC6-xD-D7W" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="198" y="869"/>
+        </scene>
     </scenes>
     <resources>
         <image name="list" width="20" height="20"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="LGy-Qh-22t"/>
+    </inferredMetricsTieBreakers>
 </document>
