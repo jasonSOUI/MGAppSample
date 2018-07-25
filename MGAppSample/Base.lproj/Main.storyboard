@@ -102,14 +102,40 @@
             </objects>
             <point key="canvasLocation" x="199" y="79"/>
         </scene>
-        <!--View Controller-->
+        <!--Search Bar View Controller-->
         <scene sceneID="URC-T4-xlu">
             <objects>
-                <viewController storyboardIdentifier="searchBarView" id="q7g-zf-yEj" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="searchBarView" id="q7g-zf-yEj" customClass="SearchBarViewController" customModule="MGAppSample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="RL6-e1-Ryq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Wyc-K4-Fb3">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="searchBarTableCell" id="9Pj-Jx-Iw5">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="9Pj-Jx-Iw5" id="aUA-t4-xyQ">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="q7g-zf-yEj" id="vzW-Vk-yNa"/>
+                                    <outlet property="delegate" destination="q7g-zf-yEj" id="s1O-yo-7Tx"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="0.93229597733395264" green="0.99630436433941283" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="Wyc-K4-Fb3" firstAttribute="top" secondItem="hFp-dB-GUF" secondAttribute="top" id="9JZ-y2-rMg"/>
+                            <constraint firstItem="Wyc-K4-Fb3" firstAttribute="leading" secondItem="hFp-dB-GUF" secondAttribute="leading" id="9Ww-km-110"/>
+                            <constraint firstItem="Wyc-K4-Fb3" firstAttribute="bottom" secondItem="hFp-dB-GUF" secondAttribute="bottom" id="Y9t-ho-1nw"/>
+                            <constraint firstItem="Wyc-K4-Fb3" firstAttribute="trailing" secondItem="hFp-dB-GUF" secondAttribute="trailing" id="dbE-V3-Giw"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="hFp-dB-GUF"/>
                     </view>
                     <navigationItem key="navigationItem" id="361-1Y-g8I">
@@ -119,10 +145,13 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="resultTableView" destination="Wyc-K4-Fb3" id="Fh1-MF-SXp"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uQ6-az-xy2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1023" y="869"/>
+            <point key="canvasLocation" x="1021.6" y="868.51574212893559"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0xA-de-r4K">
