@@ -19,10 +19,9 @@ class SideMenuTableViewController: UITableViewController {
 
     // 設定選單
     private func setUpTitleDataList() {
-        titleList.append(SideMenuData(title: "SearchBar練習", image: "SearchBar"))
-        titleList.append(SideMenuData(title: "WebView練習", image: "SearchBar"))
-        titleList.append(SideMenuData(title: "JSON練習", image: "SearchBar"))
-        titleList.append(SideMenuData(title: "XML練習", image: "SearchBar"))
+        titleList.append(SideMenuData(title: "SearchBar練習", image: "SearchBar", page: "searchBarView"))
+        titleList.append(SideMenuData(title: "WebView練習", image: "SearchBar", page: "webView"))
+        titleList.append(SideMenuData(title: "JSON練習", image: "RandomUser", page: "randomUserView"))
     }
     
     override func didReceiveMemoryWarning() {
@@ -48,7 +47,7 @@ class SideMenuTableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let vc = storyboard?.instantiateViewController(withIdentifier: "searchBarView")
+        let vc = storyboard?.instantiateViewController(withIdentifier: titleList[indexPath.row].page)
         navigationController?.pushViewController(vc!, animated: true)
     }
 
@@ -102,6 +101,7 @@ class SideMenuTableViewController: UITableViewController {
 struct SideMenuData {
     var title: String
     var image: String
+    var page: String
 }
 
 
