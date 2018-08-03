@@ -12,6 +12,8 @@
 		8929402821086358004C42D2 /* SideMenuTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929402721086358004C42D2 /* SideMenuTableViewController.swift */; };
 		8929402A21086B4A004C42D2 /* SearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8929402921086B4A004C42D2 /* SearchBarViewController.swift */; };
 		893934592109C3D300B5F805 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 893934582109C3D300B5F805 /* WebViewController.swift */; };
+		895004542114339F0018B420 /* RandomUserDataBean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895004532114339F0018B420 /* RandomUserDataBean.swift */; };
+		895D7E552112F5A200F65BAC /* RandomUserTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 895D7E542112F5A200F65BAC /* RandomUserTableViewController.swift */; };
 		89E26C58210858D100584873 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E26C57210858D100584873 /* AppDelegate.swift */; };
 		89E26C5A210858D100584873 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 89E26C59210858D100584873 /* ViewController.swift */; };
 		89E26C5D210858D100584873 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 89E26C5B210858D100584873 /* Main.storyboard */; };
@@ -26,6 +28,8 @@
 		8929402721086358004C42D2 /* SideMenuTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuTableViewController.swift; sourceTree = "<group>"; };
 		8929402921086B4A004C42D2 /* SearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarViewController.swift; sourceTree = "<group>"; };
 		893934582109C3D300B5F805 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		895004532114339F0018B420 /* RandomUserDataBean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserDataBean.swift; sourceTree = "<group>"; };
+		895D7E542112F5A200F65BAC /* RandomUserTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserTableViewController.swift; sourceTree = "<group>"; };
 		89E26C54210858D100584873 /* MGAppSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MGAppSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		89E26C57210858D100584873 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		89E26C59210858D100584873 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -90,6 +94,8 @@
 				8929402921086B4A004C42D2 /* SearchBarViewController.swift */,
 				893934582109C3D300B5F805 /* WebViewController.swift */,
 				891D5F7F210EB0060019392B /* RandomUserViewController.swift */,
+				895D7E542112F5A200F65BAC /* RandomUserTableViewController.swift */,
+				895004532114339F0018B420 /* RandomUserDataBean.swift */,
 			);
 			path = MGAppSample;
 			sourceTree = "<group>";
@@ -218,8 +224,10 @@
 				892940242108629D004C42D2 /* SideMenuTableViewCell.swift in Sources */,
 				893934592109C3D300B5F805 /* WebViewController.swift in Sources */,
 				8929402A21086B4A004C42D2 /* SearchBarViewController.swift in Sources */,
+				895004542114339F0018B420 /* RandomUserDataBean.swift in Sources */,
 				89E26C5A210858D100584873 /* ViewController.swift in Sources */,
 				891D5F80210EB0060019392B /* RandomUserViewController.swift in Sources */,
+				895D7E552112F5A200F65BAC /* RandomUserTableViewController.swift in Sources */,
 				89E26C58210858D100584873 /* AppDelegate.swift in Sources */,
 				8929402821086358004C42D2 /* SideMenuTableViewController.swift in Sources */,
 			);

@@ -17,7 +17,12 @@ class ViewController: UIViewController {
         let sideMenu = storyboard!.instantiateViewController(withIdentifier: "sideMenu") as? UISideMenuNavigationController
         
         SideMenuManager.default.menuLeftNavigationController = sideMenu
+        
+         self.navigationController?.navigationBar.barTintColor = UIColor(red: 0.67, green: 0.2, blue: 0.1, alpha: 1.0)
+        
+        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
 
+         
     }
 
     override func didReceiveMemoryWarning() {
